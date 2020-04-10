@@ -292,4 +292,18 @@ footer nav {
     margin: 4% 0
 }
 
-@media(max-width:500px)
+
+/* If you were to describe semantic HTML to the next cohort of students, what would you say?
+
+Semantic HTML allows you to divide your page into sections that have a meaning, much like writing an essay, you know that a header is going to be on top, a footer on the bottom etc. that way you know what you are putting into where. Non-semantics are general and if used too much can really trip you up when styling in css. 
+
+What are the 4 areas of the box model?
+Margin,Border, padding, content.
+
+While using flexbox, what axis does the following property work on: align-items: center? It works on the vertical axis.
+
+Explain why git is valuable to a team of developers.
+it allows several people to work on different branches of the same project while not affecting the base frame, so if someones code causes something to not work it does not ruin the main code. It adds safeguards, to teams of developers. It also allows people to go back to a previous code that isn't broken. 
+
+Define mobile-first design in your own words.
+It means you set up your site to look well within the parameters of a mobile screen size, as oppose to starting with a laptop screen. So you start with mobile and then using responsive code, allow the site to upscale to a laptop screen instead of the other way around where you start with desktop first and downscale to mobile.   */
