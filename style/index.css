@@ -217,16 +217,79 @@ header {
 
 @media(max-width:800px){
 
-nav{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    widows: 800px;
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
     
+    }
+
+    nav a {
+        padding: 2%;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 70%;
+        text-align: center; 
+    }
+
+    nav img {
+        width: 35%;
+        margin: 8% 0;        
+    }
+
+    #traffic {
+        height: 30vh;
+        width: 80%;
+    }
+
+    .top-content{
+        flex-direction: column;
+            
+    }
+
+    .top-content .text-container{
+        width: 80%;
+    }
+    .text-container p {
+        font-size: 1.5rem;
+    }
+    .text-container h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .middle-content .boxes{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+
+    }
+
+    .middle-content .boxes .box {
+    width: 25%;
+    height: 20vh;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav a {
-    padding: 2%;
-}
+.middle-content h2{
+    font-size: 2rem;
 }
 
+.bottom-content {
+    flex-direction: column;
+}
+.bottom-content .text-container{
+    width: 80%;
+}
+
+footer nav {
+    width: 80%;
+    margin: 4% 0
+}
+
+@media(max-width:500px)
