@@ -212,3 +212,21 @@ header {
 .box:nth-of-type(10){
     background: dodgerblue;
 }
+
+/* mobile adaptation */
+
+@media(max-width:800px){
+
+nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    widows: 800px;
+    
+}
+
+nav a {
+    padding: 2%;
+}
+}
+
