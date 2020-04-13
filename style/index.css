@@ -18,7 +18,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    /* border: 0; 
+    Remove these comment brackets when done*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -26,7 +27,12 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
+}
+
+/* get rid of this before submitting */
+* {
+    border: 1px dotted lightgrey;
 }
 body {
 	line-height: 1;
@@ -65,9 +71,10 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+    
 
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -104,7 +111,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -144,3 +151,264 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* sprint challenge add ons */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5% 0;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% auto;
+}
+
+.box:nth-of-type(1){
+    background: teal;
+}
+
+.box:nth-of-type(2){
+    background: gold;
+}
+
+.box:nth-of-type(3){
+    background:cadetblue;
+}
+
+.box:nth-of-type(4){
+    background: coral;
+}
+
+.box:nth-of-type(5){
+    background: crimson;
+}
+
+.box:nth-of-type(6){
+    background: forestgreen;
+}
+
+.box:nth-of-type(7){
+    background: darkorchid;
+}
+
+.box:nth-of-type(8){
+    background: hotpink;
+}
+
+.box:nth-of-type(9){
+    background: indigo;
+}
+
+.box:nth-of-type(10){
+    background: dodgerblue;
+}
+
+/* mobile adaptation */
+
+@media(max-width:800px){
+    body {
+        margin: 0 auto;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+
+    nav a {
+        padding: 2%;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 70%;
+        text-align: center; 
+        margin: 0 auto;
+    }
+
+    nav img {
+        width: 35%;
+        margin: 0 auto;        
+    }
+
+    #traffic {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .top-content{
+        flex-direction: column;
+        margin: 0 auto;
+            
+    }
+
+    .top-content .text-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text-container p {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .text-container h2 {
+        font-size: 2rem;
+        text-align: left;
+        margin: 0 auto;
+    } 
+
+    .middle-content .boxes{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .middle-content .boxes .box {
+    width: 25%;
+    margin: 10px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .middle-content h2{
+    font-size: 2rem;
+    margin: 0 auto;
+    }
+
+    .bottom-content {
+    flex-direction: column;
+    margin: 0 auto;
+    }
+    .bottom-content .text-container{
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    footer nav {
+    width: 100%;
+    margin: 0 auto;
+    }
+
+}
+
+@media(max-width:500px){
+       
+    body {
+        margin: 0 auto;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    
+    nav a {
+        padding: 2%;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 70%;
+        text-align: center; 
+        margin: 0 auto;
+    }
+    
+    nav img {
+        width: 35%;
+        margin: 0 auto;        
+    }
+    
+    #traffic {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .top-content{
+        flex-direction: column;
+        margin: 0 auto; 
+    }
+    
+    .top-content .text-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text-container p {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    .text-container h2 {
+        font-size: 2rem;
+        text-align: left;
+        margin: 0 auto;
+    } 
+    
+    .middle-content .boxes{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+    
+    .middle-content .boxes .box {
+        width: 25%;
+        margin: 10px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .middle-content h2{
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+    
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .bottom-content .text-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    footer nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+}
+
+/* If you were to describe semantic HTML to the next cohort of students, what would you say?
+
+Semantic HTML allows you to divide your page into sections that have a meaning, much like writing an essay, you know that a header is going to be on top, a footer on the bottom etc. that way you know what you are putting into where. Non-semantics are general and if used too much can really trip you up when styling in css. 
+
+What are the 4 areas of the box model?
+Margin,Border, padding, content.
+
+While using flexbox, what axis does the following property work on: align-items: center? It works on the vertical axis.
+
+Explain why git is valuable to a team of developers.
+it allows several people to work on different branches of the same project while not affecting the base frame, so if someones code causes something to not work it does not ruin the main code. It adds safeguards, to teams of developers. It also allows people to go back to a previous code that isn't broken. 
+
+Define mobile-first design in your own words.
+It means you set up your site to look well within the parameters of a mobile screen size, as oppose to starting with a laptop screen. So you start with mobile and then using responsive code, allow the site to upscale to a laptop screen instead of the other way around where you start with desktop first and downscale to mobile.   */
